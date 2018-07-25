@@ -1,0 +1,445 @@
+body{
+	background: url(../img/banner.jpg) no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	overflow-x: hidden;	
+}
+.back-up{
+	display: block;
+	position:fixed;
+	right: 50px;
+	bottom: 50px;
+	width: 45px;
+	height: 45px;
+	background: rgb(32, 59, 77);
+	color: #e321f5;
+	text-align: center;
+	line-height: 45px;
+}
+.back-up i{
+	display: inline-block;
+	line-height: 45px;
+	z-index: 10;
+}
+
+.overlay{
+	z-index: 3;
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.4);	
+}
+
+.menu{
+	position: fixed;
+	right: 0;
+	top: 50px;
+	width: 400px;
+	height: 550px;
+	z-index: 5;
+	background: rgba(59, 110, 94, 0.85);
+	display: none;
+}
+.menu .menu-content{
+	margin: 40px;
+	
+}
+.menu .menu-content li{
+	margin-top: 25px;
+	text-align: center;
+	border-bottom: 1px solid #43825a;	
+}
+.menu .menu-content a{
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	line-height: 35px;
+}
+.menu .menu-content a i{
+	padding-right: 15px;
+	color: #4ef1b1;
+}
+.menu .menu-content a:hover{
+	color: red;
+}
+.menu_a{
+	cursor: pointer;
+}
+.index-nav{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background: rgba(0,0,0,0.6);
+	z-index: 4;
+	
+}
+#banner{
+	height: 700px;
+	background: rgba(0,0,0,0.4);
+}
+
+.index-nav .nav-group{
+	float: right;
+}
+.index-nav .logo{
+	float: left;
+	line-height: 50px;
+	margin-left: 20px;
+}
+.index-nav .logo a{
+	font-size: 20px;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 700;
+	line-height: 50px;
+	display: inline-block;
+}
+.index-nav .logo i{
+	color: #fff;
+	margin-left: 15px;
+	display: inline-block;
+}
+.index-nav .logo i:hover{
+	color: red;
+}
+
+.index-nav .logo a:hover{
+	color: orange;
+}
+
+.index-nav .nav-group li{
+	line-height: 50px;
+	display: inline-block;
+	margin-right: 20px;
+}
+.index-nav .nav-group li a{
+	display: inline-block;
+	line-height: 50px;
+	height: 50px;
+	color: #fff;
+}
+.index-nav .nav-group li a:hover{
+	color: orangered;
+}
+
+#banner .inner{
+	max-width: 300px;
+	margin: 0 auto;
+	position:relative;
+	text-align: center;
+	top: 140px;
+}
+#banner .inner h1{
+	padding: 20px;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+	opacity: 0;
+}
+#banner .inner .heading-intro{
+	line-height: 30px;
+	margin-top: 20px;
+	color: #fff;
+	margin-bottom: 20px;
+	opacity: 0;
+}
+button{
+	border: none;
+	background: #222;
+	color: #fff;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+#banner button{
+	padding: 14px 50px;
+	background: #338FCC;
+	color: #eee;
+	font-size: 13px;
+}
+#banner .inner .more{
+	margin-top: 120px;
+	color: #fff;
+}
+#banner .inner .arrow{
+	margin-top: 20px;	
+}
+#banner .inner .arrow a{
+	color: #fff;
+}
+#banner .inner .arrow a:hover{
+	color: orange;
+}
+/*内容部分*/
+.hr{
+	width: 100%;
+	height: 2px;	
+	margin: 20px auto;
+}
+
+.green-section{
+	text-align: center;
+	background: rgba(53, 118, 107, 0.97);
+	padding: 70px 0;
+	color: #fff;
+}
+
+/*.green-section  添加类选择器之后的top偏移量 （动画）*/
+.green-section.on .wrapper .head h2{
+	top: 0;
+}
+.green-section.on .wrapper .icon-group{
+	top: 0;
+}
+.green-section.on .sub-heading{
+	top: 0;
+}
+
+.wrapper{
+	width: 1080px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.green-section .wrapper .icon-group{
+	margin-top: 20px;
+	position: relative;
+	top: 400px;
+	transition: top .5s 1.2s;
+}
+.green-section .wrapper .icon{
+	text-align: center;	
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: rgba(25, 106, 103, 0.36);
+	transform: rotate(45deg);
+	margin: 25px;
+	cursor: pointer;
+	/*transition: width 1s,height 1s;*/
+}
+.green-section .wrapper .icon:hover{
+	/*width: 90px;
+	height: 90px;*/
+	color: olivedrab;
+}
+.green-section .wrapper .icon i{
+	padding-top: 20px;
+	padding-right: 16px;
+	transform: rotate(-45deg);
+}
+.green-section .wrapper .head h2{
+	position: relative;
+	top: 400px;
+	transition: top .5s .2s;
+}
+.sub-heading{
+	position: relative;
+	top: 400px;
+	transition: top .5s .8s;
+}
+.green-section .wrapper .hr{
+	background:#076165;
+	width: 60%;
+}
+.art-one .img-section,.art-three .img-section{
+	position: relative;
+	left: 1300px;
+}
+.art-one.on .img-section,.art-three.on .img-section{
+	left: 0;
+}
+.art-one .text-section,.art-three .text-section{
+	position: relative;
+	left: 1300px; 
+}
+.art-one.on .text-section,.art-three.on .text-section{
+	left: 30px;
+}
+
+.art-two .img-section{
+	position: relative;
+	right: 1300px;	
+}
+.art-two.on .img-section{
+	right: 0;	
+}
+.art-two .text-section{
+	position: relative;	
+	right: 1300px;
+}
+.art-two.on .text-section{
+	right: 0;
+}
+.gray-section{
+	background: rgba(34, 34, 34, 0.98);	
+}
+.gray-section .article-preview{	
+	overflow: hidden;
+}
+.gray-section .article-preview:nth-child(odd){
+	background: rgba(255,255,255,0.05);
+}
+
+.gray-section .img-section{
+	width: 45%;
+	font-size: 0;
+	transition: .5s .2s;
+}
+.gray-section .text-section{
+	position: relative;	
+	top: 85px;	
+	width: 55%;
+	color: #fff;
+	height: 100%;	
+	transition: .5s 1.0s;
+	
+}
+.gray-section .text-section p{	
+	letter-spacing: 1px;
+	font-size: 17px;
+	padding-right: 35px;
+	padding-top: 30px;
+	line-height: 35px;
+}
+.gray-section .img-section img{
+	width: 100%;
+}
+.purple-section{
+	padding: 80px;
+	background:rgba(96, 66, 114, 0.98);
+	color: #fff;
+}
+.purple-section .wrapper{
+	width: 900px;
+}
+.purple-section .header-wrapper h2{
+	text-align: center;
+}
+.purple-section .header-wrapper .hr{
+	background: #38106c;
+	width: 60%;
+}
+.purple-section .card-group{
+	margin-top: 50px;
+}
+.purple-section .card-group .card{
+	width: 50%;	
+	display: -moz-inline-box;
+	height: 250px;
+	float: left;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 40px;	
+}
+.purple-section .card-group .card h3{
+	padding-bottom: 20px;
+}
+.purple-section .card-group .card h3 i{
+	padding-right: 10px;
+	color: #2cc2f5;	
+}
+.purple-section .card-group .card p{
+	letter-spacing: 1px;
+}
+
+.purple-section .card-group .card:nth-child(1){
+	position: relative;
+	right: 500px;
+	background: rgba(0,0,0,0.04);
+	cursor: pointer;
+	transition: transform 2s,right .5s .2s;
+}
+.purple-section.on .card-group .card:nth-child(1){
+	right: 0;
+}
+.purple-section .card-group .card:nth-child(1):hover{
+	transform: rotate(10deg);
+}
+.purple-section .card-group .card:nth-child(2){
+	position: relative;
+	left: 500px;
+	background: rgba(0,0,0,0.08);
+	cursor: pointer;
+	transition: transform 2s,left .5s .2s;;
+}
+.purple-section.on .card-group .card:nth-child(2){
+	left: 0;
+}
+.purple-section .card-group .card:nth-child(2):hover{
+	transform: rotate(-10deg);
+}
+
+.purple-section .card-group .card:nth-child(3){
+	position: relative;
+	top: 500px;
+	background: rgba(0,0,0,0.12);
+	cursor: pointer;
+	transition: transform 2s;
+	transition: transform 2s,top .5s 3.4s;
+}
+.purple-section.on .card-group .card:nth-child(3){
+	top: 0;
+}
+.purple-section .card-group .card:nth-child(3):hover{
+	transform: rotate(10deg);
+}
+.purple-section .card-group .card:nth-child(4){
+	position: relative;
+	bottom: 800px;
+	background: rgba(0,0,0,0.16);
+	cursor: pointer;
+	transition: transform 2s,bottom .5s 3.4s;
+}
+.purple-section.on .card-group .card:nth-child(4){
+	bottom: 0;
+}
+.purple-section .card-group .card:nth-child(4):hover{
+	transform: rotate(-10deg);
+}
+.purple-section .card-group .card:nth-child(5){
+	position: relative;
+	right: 500px;
+	background: rgba(0,0,0,0.20);
+	cursor: pointer;
+	transition: transform 2s,right .5s 6.4s;
+}
+.purple-section.on .card-group .card:nth-child(5){
+	right: 0;
+}  
+.purple-section .card-group .card:nth-child(5):hover{
+	transform: rotate(10deg);
+}
+.purple-section .card-group .card:nth-child(6){
+	position: relative;
+	left: 500px;
+	background: rgba(0,0,0,0.24);
+	cursor: pointer;
+	transition: transform 2s,left .5s 6.4s;
+}
+.purple-section.on .card-group .card:nth-child(6){
+	left: 0;
+}
+.purple-section .card-group .card:nth-child(6):hover{
+	transform: rotate(-10deg);
+}
+/*页脚部分*/
+footer{
+	background: #333;
+	color: #FFFFFF;
+	height: 200px;
+	text-align: center;
+}
+footer .friend-group{	
+	margin: 0 auto;
+	padding:40px 0;
+	
+}
+footer .friend-group li{	
+	display: inline-block;
+	padding: 10px;
+}
+

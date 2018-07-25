@@ -1,0 +1,83 @@
+body{
+	color: #000;
+	font-size: 14px;
+	/*background: #f1fafc;*/
+	background: #222;
+	font-family: "宋体";
+}
+.color-font{
+	color: blue;
+}
+.fr{
+	float: right;
+}
+.cancel{
+	color: #666;
+	padding: 3px 6px;
+	outline: none;
+	background: #fff;
+	cursor: pointer;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+}
+.save{
+	color: #fff;
+	padding: 3px 6px;
+	outline: none;
+	cursor: pointer;
+	background: blue;
+	border: 1px solid blue;
+	border-radius: 3px;
+}
+select{
+	height: 21px;
+}
+.dark{
+	color: #aaa;
+}
+
+.content-title{
+	width: 80px;
+    display: inline-block;
+}
+form{
+	padding: 12px 15px;
+}
+.wrapper{
+	overflow: hidden;
+}
+
+.content{		
+	margin:5px;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: -3px 3px 8px #ccc;	
+}
+.left {
+	width: 49.5%;
+	float: left;
+}
+.right{
+	width: 49.5%;
+	float: right;
+}
+.bottom{
+	margin-top: 15px;
+}
+.button-group{
+    margin-top: -35px;
+}
+.large{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/*< 1100px*/
+@media screen and (max-width: 1100px) {
+	.content{
+		width: 100%;
+	}
+	.right{
+		width: 100%;
+	}
+}

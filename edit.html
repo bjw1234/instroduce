@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>编辑个人信息</title>
+	<link rel="stylesheet" type="text/css" href="css/edit.css">
+	<link rel="stylesheet" type="text/css" href="img/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content left"><!-- 左侧区域开始 -->
+			<form action="post" name="edit_user_info">
+				<p>
+					<span class="icon-book"></span>
+					<span class="large">学校信息</span>
+					<div class="button-group fr">
+						<button class="cancel">取消</button>
+						<button class="save">保存</button>
+					</div>
+				</p>
+				<p>
+					<span class="content-title">大学</span>
+					<input type="text">
+					<select>
+						<option>入学年份</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+					</select>
+				</p>
+				<p>
+					<span class="content-title">身份</span>					
+					<select>
+						<option>请选择类型</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+					</select>
+				</p>
+				<p>
+					<span class="content-title">院系</span>					
+					<select>
+						<option>院系</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+					</select>
+					<select>
+						<option>宿舍</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+					</select>
+				</p>				
+				<p class="color-font"><span class="content-title"></span> 删除这个大学</p>
+				<p class="color-font"><span class="content-title"></span> 添加大学</p>
+				<p>
+					<span class="content-title">高中</span>
+					<input type="text">
+					<select>
+						<option>入学年份</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+					</select>
+				</p>
+				<p>
+					<span class="content-title">班级</span>					
+					<label class="dark">高一&nbsp;</label><input type="text" name=""><label class="dark">&nbsp;班</label><br><br>
+					<span class="content-title"></span>
+					<label class="dark">高二&nbsp;</label><input type="text" name=""><label class="dark">&nbsp;班</label><br><br>
+					<span class="content-title"></span>
+					<label class="dark">高三&nbsp;</label><input type="text" name=""><label class="dark">&nbsp;班</label><br>
+				</p>
+				<p class="color-font"><span class="content-title"></span> 删除这个高中</p>
+				<p class="color-font"><span class="content-title"></span> 添加高中</p>
+				<p>
+					<span class="content-title">中专技校</span>
+					<input type="text">
+					<select>
+						<option>入学年份</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+					</select>
+					<span class="color-font">删除</span>
+				</p>
+				<p class="color-font"><span class="content-title"></span> 添加中专技校</p>
+				<p>
+					<span class="content-title">初中</span>
+					<input type="text">
+					<select>
+						<option>入学年份</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+					</select>
+					<span class="color-font">删除</span>
+				</p>
+				<p class="color-font"><span class="content-title"></span> 添加初中</p>
+				<p>
+					<span class="content-title">小学</span>
+					<input type="text">
+					<select>
+						<option>入学年份</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+					</select>
+					<span class="color-font">删除</span>
+				</p>
+				<p class="color-font"><span class="content-title"></span> 添加小学</p>
+			</form>
+		</div><!-- 左侧区域结束 -->
+		<div class="right"><!-- 右侧区域开始 -->
+			<div class="content top"><!-- 右上 -->
+				<form>
+					<p>
+						<span class="icon-heart"></span>
+						<span class="large">情感状态</span>
+						<div class="button-group fr">
+							<button class="cancel">取消</button>
+							<button class="save">保存</button>
+						</div>
+					</p>
+					<p>					
+						<span>感情状态</span>
+						<select>
+							<option>不填写</option>
+							<option>未婚</option>
+							<option>已婚</option>
+							<option>离异</option>
+						</select>
+					</p>
+				</form>
+			</div>
+
+			<div class="content bottom"><!-- 右下 -->
+				<form>
+					<p>
+						<span class="icon-user"></span>
+						<span class="content-title large">基本信息</span>
+						<div class="button-group fr">
+							<button class="cancel">取消</button>
+							<button class="save">保存</button>
+						</div>
+					</p>
+					<p>
+						<span class="content-title">*姓名</span>
+						<input type="text" name=""><span class="dark"> 可中文姓名后添加英文名称</span>
+					</p>
+					<p>
+						<span class="content-title">昵称</span>
+						<input type="text" name=""><span class="dark"> 只有星级用户才可使用</span>
+					</p>
+					<p>
+						<span class="content-title">*性别</span>
+						<input type="radio" id="man" name="sex"><label for="man">男</label>
+						<input type="radio" id="women" name="sex"><label for="women">女</label>
+					</p>
+					<p>
+						<span class="content-title">*家乡</span>					
+						<select>
+							<option>江苏</option>
+							<option>...</option>							
+						</select>
+						<select>
+							<option>江苏市</option>
+							<option>...</option>							
+						</select>
+					</p>
+					<p>
+						<span class="content-title">*所在地</span>					
+						<select>
+							<option>江苏</option>
+							<option>...</option>							
+						</select>
+						<select>
+							<option>江苏市</option>
+							<option>...</option>							
+						</select>
+					</p>
+					<p>
+						<span class="content-title">*生日</span>
+						<input type="radio" id="gun" name="birthday"><label for="gun">公历生日</label>
+						<input type="radio" id="non" name="birthday"><label for="non">农历生日</label>
+					</p>
+					<p><span class="content-title"></span> <input type="date"></p>
+					<p><span class="content-title">个性签名</span>
+						<span class="color-font">立即抢注属于自己的个性签名，如yourname. renren.com</span>
+					</p>
+					<p>
+						<span class="content-title">主页显示</span>
+						<select>
+							<option>苏州市</option>
+							<option>...</option>							
+						</select>
+					</p>
+					<p class="dark"><span class="content-title"></span> 可设置所在地及通过认证的资料信息</p>
+				</form>
+			</div>
+
+		</div><!-- 右侧区域结束 -->
+	</div>
+</body>
+</html>
